@@ -10,9 +10,6 @@ import {
   View,
 } from 'react-native';
 
-const {
-  PropTypes,
-} = React;
 
 import { calculateHeightFromDates } from './utils';
 import { CurrentTimeIndicator } from './CurrentTimeIndicator';
@@ -21,14 +18,6 @@ import moment from 'moment';
 const DEFAULT_HOUR_HEIGHT = 60;
 export const DayView = React.createClass({
   propTypes: {
-    contentOffset: PropTypes.object,
-    dayStartDate: PropTypes.instanceOf(Date).isRequired,
-    events: PropTypes.array.isRequired,
-    currentTime: PropTypes.instanceOf(Date),
-    hourHeight: PropTypes.number,
-    onLayout: PropTypes.func,
-    onScroll: PropTypes.func,
-    scrollEnabled: PropTypes.bool,
   },
 
   scrollView: (null: ?Object),
