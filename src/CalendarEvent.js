@@ -10,15 +10,7 @@ import {
 } from 'react-native';
 
 
-const {
-  PropTypes,
-} = React;
-
 export const CalendarEvent = React.createClass({
-  propTypes: {
-    style: View.propTypes.style,
-    title: PropTypes.string.isRequired,
-  },
 
   render() {
     const { style, title } = this.props;
